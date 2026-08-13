@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function fnName() {
+        console.log(arguments);
+      }
+
+      fnName(10, true, "Kabir", 99);
+
+      const myArrowFn = () => {
+        console.log(arguments);
+      };
+
+      myArrowFn(10, 20, 30);
+    </script>
+  </body>
+</html>
