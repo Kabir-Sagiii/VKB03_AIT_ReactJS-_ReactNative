@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- React, ReactDOM, Babel -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      var x = "Sagar";
+      const input = <input type="text" placeholder="username" />;
+
+      const password = <input type="password" placeholder="password" />;
+
+      const p = <p> {4 + 5} </p>;
+
+      const p1 = <p> {x} </p>;
+
+      const img = (
+        <img width="300" src="https://babeljs.io/img/babel.svg" height="300" />
+      );
+
+      ReactDOM.render(
+        [input, password, p, p1],
+        document.getElementById("root")
+      );
+    </script>
+  </body>
+</html>

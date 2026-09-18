@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #card {
+        width: 270px;
+        padding: 10px;
+        box-shadow: 0 0 10px black;
+        margin: 20px;
+        text-align: center;
+      }
+    </style>
+    <!-- React, ReactDOM, Babel -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function createCard(name, image) {
+        return (
+          <div id="card">
+            <img src={image} width="100%" height="230" />
+            <h2>{name}</h2>
+          </div>
+        );
+      }
+
+      ReactDOM.render(
+        [
+          createCard(
+            "riya sharma",
+            "https://static.vecteezy.com/system/resources/previews/025/474/309/non_2x/portrait-of-a-professional-woman-in-a-suit-business-woman-standing-in-an-office-ai-generated-photo.jpg"
+          ),
+          createCard(
+            "rohan verma",
+            "https://static.vecteezy.com/system/resources/previews/029/891/975/non_2x/business-american-man-in-light-cream-ai-generative-free-photo.jpg"
+          ),
+          createCard(
+            "ajay patil",
+            "https://static.vecteezy.com/system/resources/previews/033/129/417/non_2x/a-business-man-stands-against-white-background-with-his-arms-crossed-ai-generative-photo.jpg"
+          ),
+        ],
+        document.getElementById("root")
+      );
+    </script>
+  </body>
+</html>

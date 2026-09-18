@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- React , ReactDOM, Babel -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <section id="mySection"></section>
+
+    <script type="text/babel">
+      const heading = <h1>Welcome to React JS </h1>; // JSX Element
+
+      const btn = <button>Submit</button>;
+
+      ReactDOM.render(
+        [heading, btn, heading, btn, btn, btn, btn],
+        document.getElementById("mySection")
+      );
+    </script>
+  </body>
+</html>

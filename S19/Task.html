@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- React, ReactDOM, Babel -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <!-- connect css file with html file -->
+    <link rel="stylesheet" href="./Task.css" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function container(title) {
+        return (
+          <div id="my-container">
+            <h1>{title}</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
+              dolorum ut earum delectus vel quaerat suscipit, doloremque
+              necessitatibus, quidem maiores, quo iste laudantium laboriosam est
+              ipsam aliquam eum aspernatur unde molestiae inventore! Adipisci ad
+              dicta modi recusandae sapiente nulla officiis suscipit assumenda
+              porro inventore, aut error, magni sed nemo dolores? Quod quaerat
+              tempore explicabo! Iure quibusdam assumenda minus in libero
+              quisquam, dignissimos quos eaque ad numquam sapiente perferendis
+              amet eum.
+            </p>
+          </div>
+        );
+      }
+
+      function app() {
+        return (
+          <div>
+            {container("HTML")}
+            {container("CSS")}
+            {container("JS")}
+            {container("REACT JS")}
+          </div>
+        );
+      }
+
+      ReactDOM.render(app(), document.getElementById("root"));
+    </script>
+  </body>
+</html>
