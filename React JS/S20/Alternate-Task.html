@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- React, ReactDOM, Babel -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <!-- connect css file with html file -->
+    <link rel="stylesheet" href="./Task.css" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function Container(para) {
+        // para = {title:"HTML",desc:`-----`}
+        return (
+          <div id="my-container">
+            <h1>{para.title}</h1>
+            <p>{para.desc}</p>
+          </div>
+        );
+      }
+
+      function App() {
+        return (
+          <div>
+            <Container
+              title={"HTML"}
+              desc={`HTML is a markup language used to structure web pages, organize content, add links, images, forms, and create accessible website layouts.
+`}
+            />
+            <Container
+              title={"CSS"}
+              desc={`CSS is a styling language used to design web pages by controlling colors, fonts, spacing, layouts, borders, animations, and responsive appearance.
+`}
+            />
+            <Container
+              title={"React JS"}
+              desc={`React is a JavaScript library for building interactive user interfaces using reusable components, efficient rendering, and dynamic data-driven web applications.
+`}
+            />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
