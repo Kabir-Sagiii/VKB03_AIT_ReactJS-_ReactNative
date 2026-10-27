@@ -268,7 +268,7 @@ function Products() {
 ])
   return (
     <div>
-        <Navbar />
+       
 
         <section className='h-[500px] shadow-xl border-2 w-[90%] my-20 mx-auto'>
             <img src="https://img.freepik.com/premium-photo/collection-electronic-devices-black-background-generative-ai_893571-1990.jpg?w=740" className='w-full h-full' alt="" />
