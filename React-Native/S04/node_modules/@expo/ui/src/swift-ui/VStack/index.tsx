@@ -1,0 +1,38 @@
+import { requireNativeView } from 'expo';
+
+import { createViewModifierEventListener } from '../modifiers/utils';
+import { type CommonViewModifierProps } from '../types';
+
+export interface VStackProps extends CommonViewModifierProps {
+  children: React.ReactNode;
+  /**
+   * The horizontal alignment of children within the stack.
+   */
+  alignment?: 'leading' | 'center' | 'trailing';
+  /**
+   * The spacing between children.
+   */
+  spacing?: number;
+  /**
+   * When `true`, a child percentage is a fraction of this stack.
+   * Universal `Column` sets this. Leave it unset to keep the SwiftUI `VStack`.
+   * @hidden
+   */
+  resolvesChildPercentages?: boolean;
+}
+
+const VStackNativeView: React.ComponentType<VStackProps> = requireNativeView(
+  'ExpoUI',
+  'VStackView'
+);
+
+export function VStack(props: VStackProps) {
+  const { modifiers, ...restProps } = props;
+  return (
+    <VStackNativeView
+      modifiers={modifiers}
+      {...(modifiers ? createViewModifierEventListener(modifiers) : undefined)}
+      {...restProps}
+    />
+  );
+}
