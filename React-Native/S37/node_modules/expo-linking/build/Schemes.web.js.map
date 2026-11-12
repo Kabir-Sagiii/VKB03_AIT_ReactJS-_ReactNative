@@ -1,0 +1,1 @@
+{"version":3,"sources":["Schemes.web.ts"],"sourcesContent":[null],"names":["hasCustomScheme","collectManifestSchemes","hasConstantsManifest","resolveScheme"],"mappings":"AAAA,OAAO,SAASA;IACd,OAAO;AACT;AACA,OAAO,SAASC;IACd,OAAO,EAAE;AACX;AACA,OAAO,SAASC;IACd,OAAO;AACT;AACA,OAAO,SAASC;IACd,OAAO;AACT"}
