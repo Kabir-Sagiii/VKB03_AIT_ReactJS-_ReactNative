@@ -1,0 +1,1 @@
+{"version":3,"sources":["views/EmptyRoute.tsx"],"sourcesContent":[null],"names":["EmptyRoute","route","useRouteNode","ToastWrapper","Toast","warning","filename","contextKey"],"mappings":"AAAA;;;;;+BAKgBA;;;eAAAA;;;;;;;;;;uBAHa;uBACO;AAE7B,SAASA;IACd,MAAMC,QAAQC,IAAAA,mBAAY;IAE1B,qBACE,uBAACC,mBAAY;kBACX,cAAA,uBAACC,YAAK;YAACC,OAAO;YAACC,UAAUL,OAAOM;sBAAY;;;AAKlD"}

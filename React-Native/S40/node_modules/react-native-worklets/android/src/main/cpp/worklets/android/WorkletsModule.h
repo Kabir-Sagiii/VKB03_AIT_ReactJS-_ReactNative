@@ -1,0 +1,85 @@
+#pragma once
+
+#include <ReactCommon/CallInvokerHolder.h>
+#include <fbjni/fbjni.h>
+#include <jsi/jsi.h>
+#include <worklets/NativeModules/WorkletsModuleProxy.h>
+#include <worklets/NativeModules/WorkletsModuleProxyInitializer.h>
+#include <worklets/Tools/RNRuntimeStatus.h>
+#include <worklets/Tools/ScriptBuffer.h>
+#include <worklets/WorkletRuntime/BundleModeConfig.h>
+#include <worklets/WorkletRuntime/RuntimeBindings.h>
+#include <worklets/android/AndroidUIScheduler.h>
+#include <worklets/android/JScriptBufferWrapper.h>
+#include <worklets/android/networking/AndroidNetworkingBackend.h>
+
+#include <memory>
+#include <string>
+
+namespace worklets {
+
+using namespace facebook;
+using namespace facebook::jni;
+
+class WorkletsModule : public jni::HybridClass<WorkletsModule> {
+ public:
+  static auto constexpr kJavaDescriptor = "Lcom/swmansion/worklets/WorkletsModule;";
+
+  static jni::local_ref<jhybriddata> initHybrid(
+      jni::alias_ref<jhybridobject> jThis,
+      jlong jsContext,
+      jni::alias_ref<facebook::react::CallInvokerHolder::javaobject> jsCallInvokerHolder,
+      jni::alias_ref<worklets::AndroidUIScheduler::javaobject> androidUIScheduler,
+      jni::alias_ref<JNetworking::javaobject> networking);
+
+  static void registerNatives();
+
+  inline std::shared_ptr<WorkletsModuleProxy> getWorkletsModuleProxy() {
+    return workletsModuleProxy_;
+  }
+
+ private:
+  explicit WorkletsModule(
+      jni::alias_ref<jhybridobject> jThis,
+      jsi::Runtime *rnRuntime,
+      const std::shared_ptr<facebook::react::CallInvoker> &jsCallInvoker,
+      const std::shared_ptr<UIScheduler> &uiScheduler,
+      jni::global_ref<JNetworking::javaobject> networking);
+
+  void prepareProxyCpp();
+
+  void beginBundleModeAOTCpp();
+
+  void prepareBundleModeAOTCpp();
+
+  void installTurboModuleCpp(jboolean bundleModeEnabled);
+
+  void startCpp();
+
+  void invalidateCpp();
+
+  template <class Signature>
+  JMethod<Signature> getJniMethod(std::string const &methodName) {
+    return javaPart_->getClass()->getMethod<Signature>(methodName.c_str());
+  }
+
+  static std::shared_ptr<RuntimeBindings> getRuntimeBindings(
+      const jni::global_ref<jhybridobject> &javaPart,
+      jni::global_ref<JNetworking::javaobject> networking);
+
+  BundleModeConfig loadBundleModeConfig();
+
+  static RuntimeBindings::RequestAnimationFrame getRequestAnimationFrame(
+      const jni::global_ref<jhybridobject> &javaPart);
+
+  std::function<bool()> getIsOnJSQueueThread();
+
+  friend HybridBase;
+  jni::global_ref<WorkletsModule::javaobject> javaPart_;
+  jsi::Runtime *rnRuntime_;
+  std::shared_ptr<RNRuntimeStatus> rnRuntimeStatus_;
+  std::shared_ptr<WorkletsModuleProxyInitializer> initializer_;
+  std::shared_ptr<WorkletsModuleProxy> workletsModuleProxy_;
+};
+
+} // namespace worklets
