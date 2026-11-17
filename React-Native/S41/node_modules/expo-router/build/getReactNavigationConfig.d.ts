@@ -1,0 +1,12 @@
+import type { RouteNode } from './Route';
+export type Screen = string | {
+    path: string;
+    screens: Record<string, Screen>;
+    _route?: RouteNode;
+};
+export declare function parseRouteSegments(segments: string): string;
+export declare function getReactNavigationScreensConfig(nodes: RouteNode[], metaOnly: boolean): Record<string, Screen>;
+export declare function getReactNavigationConfig(routeTree: RouteNode | null, metaOnly: boolean): {
+    initialRouteName: undefined;
+    screens: Record<string, Screen>;
+};

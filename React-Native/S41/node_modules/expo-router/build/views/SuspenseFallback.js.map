@@ -1,0 +1,1 @@
+{"version":3,"sources":["views/SuspenseFallback.tsx"],"sourcesContent":[null],"names":["SuspenseFallback","route","__DEV__","ToastWrapper","Toast","filename"],"mappings":";;;;+BA0BgBA;;;eAAAA;;;;;;;;;;uBA1BoB;AA0B7B,SAASA,iBAAiB,EAAEC,KAAK,EAAyB;IAC/D,IAAIC,SAAS;QACX,qBACE,uBAACC,mBAAY;sBACX,cAAA,uBAACC,YAAK;gBAACC,UAAUJ;0BAAO;;;IAG9B;IACA,OAAO;AACT"}
