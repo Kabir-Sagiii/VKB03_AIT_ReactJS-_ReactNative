@@ -1,0 +1,1 @@
+{"version":3,"sources":["views/useSafeLayoutEffect.ts"],"sourcesContent":[null],"names":["useSafeLayoutEffect","window","useLayoutEffect"],"mappings":";;;;+BAEaA;;;eAAAA;;;;yBAFmB;;;;;;AAEzB,MAAMA,sBAAsB,OAAOC,WAAW,cAAcC,wBAAe,GAAG,YAAa"}
