@@ -1,0 +1,25 @@
+<style>
+  h1 {
+    color: green;
+  }
+</style>
+<h1>Welcome to JS</h1>
+<button onclick="f1()">Explore More</button><br />
+<script>
+  function f1() {
+    const img = document.createElement("img");
+    img.width = "300";
+    img.height = "300";
+    img.src =
+      "https://tse2.mm.bing.net/th/id/OIP.ZZaV8f0-sI1l6dcdApuE6gHaEK?r=0&pid=Api&h=220&P=0";
+    document.querySelector("body").append(img);
+
+    const p = document.createElement("p");
+    p.innerText = "This is paragraph ui element";
+    document.querySelector("body").append(p);
+
+    p.onmouseenter = function () {
+      p.style.color = "red";
+    };
+  }
+</script>

@@ -1,0 +1,27 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "p1",
+      "price": 5000
+    },
+    {
+      "id": "2",
+      "price": 7000,
+      "name": "p2"
+    }
+  ],
+  "results": [
+    {
+      "name": "pooja",
+      "age": 24,
+      "id": "jvM6DkBkrQY"
+    },
+    {
+      "name": "Smith",
+      "age": 34,
+      "id": "ClSDJDmdOUw"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
