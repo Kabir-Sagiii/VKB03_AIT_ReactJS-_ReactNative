@@ -10,6 +10,7 @@
     "@reduxjs/toolkit": "^2.14.0",
     "axios": "^1.21.0",
     "expo": "~58.0.19",
+    "expo-camera": "~58.0.14",
     "expo-checkbox": "~58.0.2",
     "expo-constants": "~58.0.13",
     "expo-device": "~58.0.5",

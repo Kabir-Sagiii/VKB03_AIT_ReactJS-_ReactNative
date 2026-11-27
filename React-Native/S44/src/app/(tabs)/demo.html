@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Signup Form</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f2f5;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        width: 400px;
+        margin: 40px auto;
+        background-color: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px gray;
+      }
+
+      h2 {
+        text-align: center;
+        color: #333;
+      }
+
+      label {
+        display: block;
+        margin-top: 12px;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+      .option {
+        margin-top: 8px;
+      }
+
+      .option label {
+        display: inline;
+        font-weight: normal;
+        margin-right: 12px;
+      }
+
+      textarea {
+        height: 80px;
+        resize: vertical;
+      }
+
+      button {
+        width: 48%;
+        padding: 10px;
+        margin-top: 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      .reset {
+        background-color: #777;
+      }
+
+      .reset:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Signup Form</h2>
+
+      <form>
+        <!-- Two Textboxes -->
+        <label>Full Name:</label>
+        <input type="text" placeholder="Enter your name" required />
+
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your email" required />
+
+        <!-- Two Radio Buttons -->
+        <label>Gender:</label>
+        <div class="option">
+          <input type="radio" name="gender" value="Male" />
+          <label>Male</label>
+
+          <input type="radio" name="gender" value="Female" />
+          <label>Female</label>
+        </div>
+
+        <!-- Four Checkboxes -->
+        <label>Select Your Hobbies:</label>
+        <div class="option">
+          <input type="checkbox" value="Reading" />
+          <label>Reading</label>
+
+          <input type="checkbox" value="Music" />
+          <label>Music</label>
+
+          <input type="checkbox" value="Sports" />
+          <label>Sports</label>
+
+          <input type="checkbox" value="Traveling" />
+          <label>Traveling</label>
+        </div>
+
+        <!-- Textarea -->
+        <label>Address:</label>
+        <textarea placeholder="Enter your address"></textarea>
+
+        <!-- Dropdown with Five Options -->
+        <label>Select Country:</label>
+        <select>
+          <option value="">-- Select Country --</option>
+          <option>India</option>
+          <option>USA</option>
+          <option>UK</option>
+          <option>Canada</option>
+          <option>Australia</option>
+        </select>
+
+        <!-- Buttons -->
+        <button type="submit">Sign Up</button>
+        <button type="reset" class="reset">Reset</button>
+      </form>
+    </div>
+  </body>
+</html>

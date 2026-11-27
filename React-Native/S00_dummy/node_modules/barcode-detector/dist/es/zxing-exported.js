@@ -1,0 +1,2367 @@
+// node_modules/.pnpm/zxing-wasm@3.1.8_@types+emscripten@1.41.6/node_modules/zxing-wasm/dist/es/share.js
+var e = [
+	[
+		"All",
+		"*",
+		"*",
+		"     ",
+		0,
+		"All"
+	],
+	[
+		"AllReadable",
+		"*",
+		"r",
+		"     ",
+		0,
+		"All Readable"
+	],
+	[
+		"AllCreatable",
+		"*",
+		"w",
+		"     ",
+		0,
+		"All Creatable"
+	],
+	[
+		"AllLinear",
+		"*",
+		"l",
+		"     ",
+		0,
+		"All Linear"
+	],
+	[
+		"AllMatrix",
+		"*",
+		"m",
+		"     ",
+		0,
+		"All Matrix"
+	],
+	[
+		"AllGS1",
+		"*",
+		"G",
+		"     ",
+		0,
+		"All GS1"
+	],
+	[
+		"AllRetail",
+		"*",
+		"R",
+		"     ",
+		0,
+		"All Retail"
+	],
+	[
+		"AllIndustrial",
+		"*",
+		"I",
+		"     ",
+		0,
+		"All Industrial"
+	],
+	[
+		"Codabar",
+		"F",
+		" ",
+		"lrw  ",
+		18,
+		"Codabar"
+	],
+	[
+		"Code39",
+		"A",
+		" ",
+		"lrw I",
+		8,
+		"Code 39"
+	],
+	[
+		"Code39Std",
+		"A",
+		"s",
+		"lrw I",
+		8,
+		"Code 39 Standard"
+	],
+	[
+		"Code39Ext",
+		"A",
+		"e",
+		"lr  I",
+		9,
+		"Code 39 Extended"
+	],
+	[
+		"Code32",
+		"A",
+		"2",
+		"lr  I",
+		129,
+		"Code 32"
+	],
+	[
+		"PZN",
+		"A",
+		"p",
+		"lr  I",
+		52,
+		"Pharmazentralnummer"
+	],
+	[
+		"Code93",
+		"G",
+		" ",
+		"lrw I",
+		25,
+		"Code 93"
+	],
+	[
+		"Code128",
+		"C",
+		" ",
+		"lrwGI",
+		20,
+		"Code 128"
+	],
+	[
+		"ITF",
+		"I",
+		" ",
+		"lrw I",
+		3,
+		"ITF"
+	],
+	[
+		"ITF14",
+		"I",
+		"4",
+		"lr  I",
+		89,
+		"ITF-14"
+	],
+	[
+		"DataBar",
+		"e",
+		" ",
+		"lr GR",
+		29,
+		"DataBar"
+	],
+	[
+		"DataBarOmni",
+		"e",
+		"o",
+		"lr GR",
+		29,
+		"DataBar Omni"
+	],
+	[
+		"DataBarStk",
+		"e",
+		"s",
+		"lr GR",
+		79,
+		"DataBar Stacked"
+	],
+	[
+		"DataBarStkOmni",
+		"e",
+		"O",
+		"lr GR",
+		80,
+		"DataBar Stacked Omni"
+	],
+	[
+		"DataBarLtd",
+		"e",
+		"l",
+		"lr GR",
+		30,
+		"DataBar Limited"
+	],
+	[
+		"DataBarExp",
+		"e",
+		"e",
+		"lr GR",
+		31,
+		"DataBar Expanded"
+	],
+	[
+		"DataBarExpStk",
+		"e",
+		"E",
+		"lr GR",
+		81,
+		"DataBar Expanded Stacked"
+	],
+	[
+		"EANUPC",
+		"E",
+		" ",
+		"lr  R",
+		15,
+		"EAN/UPC"
+	],
+	[
+		"EAN13",
+		"E",
+		"1",
+		"lrw R",
+		15,
+		"EAN-13"
+	],
+	[
+		"EAN8",
+		"E",
+		"8",
+		"lrw R",
+		10,
+		"EAN-8"
+	],
+	[
+		"EAN5",
+		"E",
+		"5",
+		"l   R",
+		12,
+		"EAN-5"
+	],
+	[
+		"EAN2",
+		"E",
+		"2",
+		"l   R",
+		11,
+		"EAN-2"
+	],
+	[
+		"ISBN",
+		"E",
+		"i",
+		"lr  R",
+		69,
+		"ISBN"
+	],
+	[
+		"UPCA",
+		"E",
+		"a",
+		"lrw R",
+		34,
+		"UPC-A"
+	],
+	[
+		"UPCE",
+		"E",
+		"e",
+		"lrw R",
+		37,
+		"UPC-E"
+	],
+	[
+		"Telepen",
+		"B",
+		" ",
+		"lr  I",
+		32,
+		"Telepen"
+	],
+	[
+		"TelepenAlpha",
+		"B",
+		"0",
+		"lr  I",
+		32,
+		"Telepen Alpha"
+	],
+	[
+		"TelepenNumeric",
+		"B",
+		"1",
+		"lr  I",
+		87,
+		"Telepen Numeric"
+	],
+	[
+		"OtherBarcode",
+		"X",
+		" ",
+		" r   ",
+		0,
+		"Other barcode"
+	],
+	[
+		"DXFilmEdge",
+		"X",
+		"x",
+		"lr   ",
+		147,
+		"DX Film Edge"
+	],
+	[
+		"PDF417",
+		"L",
+		" ",
+		"mrw  ",
+		55,
+		"PDF417"
+	],
+	[
+		"CompactPDF417",
+		"L",
+		"c",
+		"mr   ",
+		56,
+		"Compact PDF417"
+	],
+	[
+		"MicroPDF417",
+		"L",
+		"m",
+		"mr   ",
+		84,
+		"MicroPDF417"
+	],
+	[
+		"Aztec",
+		"z",
+		" ",
+		"mr G ",
+		92,
+		"Aztec"
+	],
+	[
+		"AztecCode",
+		"z",
+		"c",
+		"mrwG ",
+		92,
+		"Aztec Code"
+	],
+	[
+		"AztecRune",
+		"z",
+		"r",
+		"mr   ",
+		128,
+		"Aztec Rune"
+	],
+	[
+		"QRCode",
+		"Q",
+		" ",
+		"mrwG ",
+		58,
+		"QR Code"
+	],
+	[
+		"QRCodeModel1",
+		"Q",
+		"1",
+		"mr   ",
+		0,
+		"QR Code Model 1"
+	],
+	[
+		"QRCodeModel2",
+		"Q",
+		"2",
+		"mr   ",
+		58,
+		"QR Code Model 2"
+	],
+	[
+		"MicroQRCode",
+		"Q",
+		"m",
+		"mr   ",
+		97,
+		"Micro QR Code"
+	],
+	[
+		"RMQRCode",
+		"Q",
+		"r",
+		"mr G ",
+		145,
+		"rMQR Code"
+	],
+	[
+		"DataMatrix",
+		"d",
+		" ",
+		"mrwG ",
+		71,
+		"Data Matrix"
+	],
+	[
+		"MaxiCode",
+		"U",
+		" ",
+		"mr   ",
+		57,
+		"MaxiCode"
+	]
+], t = {
+	DataBarExpanded: "DataBarExp",
+	DataBarLimited: "DataBarLtd",
+	"Linear-Codes": "AllLinear",
+	"Matrix-Codes": "AllMatrix",
+	Any: "All",
+	rMQRCode: "RMQRCode"
+};
+e.map((e) => e[5]), e.filter((e) => e[1] === "*").map((e) => e[0]), e.filter((e) => e[1] !== "*").map((e) => e[0]), e.filter((e) => e[2] === " ").map((e) => e[0]), e.filter((e) => e[3][0] === "l").map((e) => e[0]), e.filter((e) => e[3][0] === "m").map((e) => e[0]), e.filter((e) => e[3][1] === "r").map((e) => e[0]), e.filter((e) => e[3][2] === "w" || e[4] !== 0).map((e) => e[0]), e.filter((e) => e[3][3] === "G").map((e) => e[0]), e.filter((e) => e[3][4] === "R").map((e) => e[0]), e.filter((e) => e[3][4] === "I").map((e) => e[0]);
+function n(e) {
+	var n;
+	return (n = t[e]) == null ? e : n;
+}
+function r(e) {
+	return e.map(n).join(",");
+}
+var i = [
+	"LocalAverage",
+	"GlobalHistogram",
+	"FixedThreshold",
+	"BoolCast"
+];
+function a(e) {
+	return i.indexOf(e);
+}
+var o = /* @__PURE__ */ "Unknown.ASCII.ISO8859_1.ISO8859_2.ISO8859_3.ISO8859_4.ISO8859_5.ISO8859_6.ISO8859_7.ISO8859_8.ISO8859_9.ISO8859_10.ISO8859_11.ISO8859_13.ISO8859_14.ISO8859_15.ISO8859_16.Cp437.Cp1250.Cp1251.Cp1252.Cp1256.Shift_JIS.Big5.GB2312.GB18030.EUC_JP.EUC_KR.UTF16BE.UTF8.UTF16LE.UTF32BE.UTF32LE.BINARY".split(".");
+function s(e) {
+	return e === "UnicodeBig" ? o.indexOf("UTF16BE") : o.indexOf(e);
+}
+var c = [
+	"Text",
+	"Binary",
+	"Mixed",
+	"GS1",
+	"ISO15434",
+	"UnknownECI"
+];
+function l(e) {
+	return c[e];
+}
+var u = [
+	"Ignore",
+	"Read",
+	"Require"
+];
+function d(e) {
+	return u.indexOf(e);
+}
+var f = [
+	"Plain",
+	"ECI",
+	"HRI",
+	"Escaped",
+	"Hex",
+	"HexECI"
+];
+function p(e) {
+	return f.indexOf(e);
+}
+var m = {
+	formats: [],
+	tryHarder: !0,
+	tryRotate: !0,
+	tryInvert: !0,
+	tryDownscale: !0,
+	tryDenoise: !1,
+	binarizer: "LocalAverage",
+	isPure: !1,
+	downscaleFactor: 3,
+	downscaleThreshold: 500,
+	minLineCount: 2,
+	maxNumberOfSymbols: 255,
+	validateOptionalChecksum: !1,
+	returnErrors: !1,
+	eanAddOnSymbol: "Ignore",
+	textMode: "HRI",
+	characterSet: "Unknown",
+	tryCode39ExtendedMode: !0
+};
+function h(e) {
+	var t;
+	return {
+		...e,
+		formats: r(e.formats),
+		binarizer: a(e.binarizer),
+		eanAddOnSymbol: d(e.eanAddOnSymbol),
+		textMode: p(e.textMode),
+		characterSet: s(e.characterSet),
+		tryCode39ExtendedMode: (t = e.tryCode39ExtendedMode) == null || t
+	};
+}
+function g(e) {
+	return {
+		...e,
+		orientation: e.rotation,
+		format: e.format,
+		symbology: e.symbology,
+		contentType: l(e.contentType)
+	};
+}
+var _ = {
+	format: "QRCode",
+	readerInit: !1,
+	forceSquareDataMatrix: !1,
+	ecLevel: "",
+	scale: 1,
+	sizeHint: 0,
+	rotate: 0,
+	invert: !1,
+	withHRT: !1,
+	withQuietZones: !0,
+	addHRT: !1,
+	addQuietZones: !0,
+	options: ""
+};
+function ee(e, t) {
+	let n = e.byteLength >> 2;
+	for (let r = 0; r < n; r += 1024) {
+		let i = Math.min(r + 1024, n);
+		for (let n = r; n < i; n++) {
+			let r = n << 2;
+			t[n] = 306 * e[r] + 601 * e[r + 1] + 117 * e[r + 2] + 512 >> 10;
+		}
+	}
+}
+var te = "3.1.8", ne = "f66b8ab4909e2ce33a1dc68add372e8d2ef99007", re = { locateFile: (e, t) => {
+	let n = e.match(/_(.+?)\.wasm$/);
+	return n ? `https://fastly.jsdelivr.net/npm/zxing-wasm@3.1.8/dist/${n[1]}/${e}` : t + e;
+} }, v = /* @__PURE__ */ new WeakMap();
+function y(e, t) {
+	return Object.is(e, t) || Object.keys(e).length === Object.keys(t).length && Object.keys(e).every((n) => Object.prototype.hasOwnProperty.call(t, n) && e[n] === t[n]);
+}
+function b(e) {
+	let { overrides: t, equalityFn: n = y, fireImmediately: r = !1 } = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : {};
+	var i;
+	let [a, o] = (i = v.get(e)) == null ? [re] : i, s = t == null ? a : t, c;
+	if (r) {
+		if (o && (c = n(a, s))) return o;
+		let t = e({ ...s });
+		return v.set(e, [s, t]), t;
+	}
+	(c == null ? n(a, s) : c) || v.set(e, [s]);
+}
+function ie(e) {
+	v.delete(e);
+}
+async function ae(e, t) {
+	let n = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : m, r = {
+		...m,
+		...n
+	}, i = await b(e, { fireImmediately: !0 }), a, o = h(r);
+	if ("width" in t && "height" in t && "data" in t) {
+		let { width: e, height: n } = t, r = t.data.buffer === i.HEAPU8.buffer ? t.data.slice() : t.data, s = r.byteLength / 4, c = i._malloc(s);
+		if (!c) throw Error(`Failed to allocate ${s} bytes in WASM memory`);
+		try {
+			ee(r, i.HEAPU8.subarray(c, c + s)), a = i.readBarcodesFromPixmap(c, e, n, o);
+		} finally {
+			i._free(c);
+		}
+	} else {
+		let e;
+		if ("buffer" in t) e = t;
+		else if ("byteLength" in t) e = new Uint8Array(t);
+		else if ("size" in t) {
+			let n = typeof t.arrayBuffer == "function" ? await t.arrayBuffer() : await new Promise((e, n) => {
+				let r = new FileReader();
+				r.onload = () => e(r.result), r.onerror = () => n(r.error), r.onabort = () => n(new DOMException("File reading aborted", "AbortError")), r.readAsArrayBuffer(t);
+			});
+			e = new Uint8Array(n);
+		} else throw TypeError("Invalid input type");
+		let n = i._malloc(e.byteLength);
+		if (!n) throw Error(`Failed to allocate ${e.byteLength} bytes in WASM memory`);
+		try {
+			i.HEAPU8.set(e, n), a = i.readBarcodesFromImage(n, e.byteLength, o);
+		} finally {
+			i._free(n);
+		}
+	}
+	try {
+		let e = [], t = a.size();
+		for (let n = 0; n < t; ++n) e.push(g(a.get(n)));
+		return e;
+	} finally {
+		a.delete();
+	}
+}
+({ ...m }), [...m.formats], { ..._ };
+// node_modules/.pnpm/zxing-wasm@3.1.8_@types+emscripten@1.41.6/node_modules/zxing-wasm/dist/es/reader/index.js
+function oe(e, t, n) {
+	return t in e ? Object.defineProperty(e, t, {
+		value: n,
+		enumerable: !0,
+		configurable: !0,
+		writable: !0
+	}) : e[t] = n, e;
+}
+async function se() {
+	let e = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {};
+	var t, n, r = e, i = !!globalThis.window, a = !!globalThis.WorkerGlobalScope;
+	(n = globalThis.process) != null && (t = n.versions) != null && t.node && globalThis.process;
+	var o = (e, t) => {
+		throw t;
+	}, s = void 0, c = "";
+	function l(e) {
+		return r.locateFile ? r.locateFile(e, c) : c + e;
+	}
+	var u, d;
+	if (i || a || typeof fetch == "function") {
+		try {
+			c = new URL(".", s).href;
+		} catch {}
+		a && (d = (e) => {
+			var t = new XMLHttpRequest();
+			return t.open("GET", e, !1), t.responseType = "arraybuffer", t.send(null), new Uint8Array(t.response);
+		}), u = async (e) => {
+			var t = await fetch(e, { credentials: "same-origin" });
+			if (t.ok) return t.arrayBuffer();
+			throw Error(t.status + " : " + t.url);
+		};
+	}
+	console.log.bind(console);
+	var f = console.error.bind(console), p, m = !1, h;
+	class g {}
+	class _ extends g {
+		constructor(e) {
+			super(), this.excPtr = e;
+		}
+	}
+	function ee() {
+		return gn.buffer;
+	}
+	function te() {
+		var e;
+		if (!(x != null && (e = x.buffer) != null && e.resizable)) {
+			var t = ee();
+			x = new Int8Array(t), _t = new Int16Array(t), r.HEAPU8 = W = new Uint8Array(t), X = new Uint16Array(t), vt = new Int32Array(t), D = new Uint32Array(t), mt = new Float32Array(t), ht = new Float64Array(t);
+		}
+	}
+	function ne() {
+		var e = r.preRun;
+		e && (typeof e == "function" && (e = [e]), S.push(...e)), fe(S);
+	}
+	function re() {
+		bn.ra();
+	}
+	function v() {
+		var e = r.postRun;
+		e && (typeof e == "function" && (e = [e]), pe.push(...e)), fe(pe);
+	}
+	function y(e) {
+		var t;
+		throw (t = r.onAbort) == null || t.call(r, e), e = `Aborted(${e})`, f(e), m = !0, e += ". Build with -sASSERTIONS for more info.", new WebAssembly.RuntimeError(e);
+	}
+	var b;
+	function ie() {
+		return l("zxing_reader.wasm");
+	}
+	function ae(e) {
+		if (e == b && p) return new Uint8Array(p);
+		if (d) return d(e);
+		throw "both async and sync fetching of the wasm failed";
+	}
+	async function se(e) {
+		if (!p) try {
+			return await u(e);
+		} catch {}
+		return ae(e);
+	}
+	async function ce(e, t) {
+		try {
+			var n = await se(e);
+			return await WebAssembly.instantiate(n, t);
+		} catch (e) {
+			f(`failed to asynchronously prepare wasm: ${e}`), y(e);
+		}
+	}
+	async function le(e, t, n) {
+		if (!e) try {
+			var r = fetch(t, { credentials: "same-origin" });
+			return await WebAssembly.instantiateStreaming(r, n);
+		} catch (e) {
+			f(`wasm streaming compile failed: ${e}`), f("falling back to ArrayBuffer instantiation");
+		}
+		return ce(t, n);
+	}
+	function ue() {
+		return { a: yn };
+	}
+	class de {
+		constructor(e) {
+			oe(this, "name", "ExitStatus"), this.message = `Program terminated with exit(${e})`, this.status = e;
+		}
+	}
+	var x, fe = (e) => {
+		for (; e.length > 0;) e.shift()(r);
+	}, pe = [], S = [], C = !0, w = (e) => ln(e), T = () => dn(), me = [], E = (e) => {
+		var t = me[e];
+		return t || (me[e] = t = _n.get(e)), t;
+	}, D;
+	class O {
+		set_type(e) {
+			D[this.ptr + 4 >> 2] = e;
+		}
+		get_type() {
+			return D[this.ptr + 4 >> 2];
+		}
+		set_destructor(e) {
+			D[this.ptr + 8 >> 2] = e;
+		}
+		get_destructor() {
+			return D[this.ptr + 8 >> 2];
+		}
+		set_caught(e) {
+			e = +!!e, x[this.ptr + 12] = e;
+		}
+		get_caught() {
+			return x[this.ptr + 12] != 0;
+		}
+		set_rethrown(e) {
+			e = +!!e, x[this.ptr + 13] = e;
+		}
+		get_rethrown() {
+			return x[this.ptr + 13] != 0;
+		}
+		init(e, t) {
+			this.set_adjusted_ptr(0), this.set_type(e), this.set_destructor(t);
+		}
+		set_adjusted_ptr(e) {
+			D[this.ptr + 16 >> 2] = e;
+		}
+		get_adjusted_ptr() {
+			return D[this.ptr + 16 >> 2];
+		}
+		constructor(e) {
+			this.excPtr = e, this.ptr = e - 24;
+		}
+	}
+	var k = [], A = 0, j = null, M = (e) => cn(e), N = (e) => {
+		var t = j == null ? void 0 : j.excPtr;
+		if (!t) return M(0), 0;
+		var n = new O(t);
+		n.set_adjusted_ptr(t);
+		var r = n.get_type();
+		if (!r) return M(0), t;
+		for (var i of e) {
+			if (!i || i === r) break;
+			var a = n.ptr + 16;
+			if (mn(i, r, a)) return M(i), t;
+		}
+		return M(r), t;
+	}, he = (e) => {
+		throw e;
+	}, ge = (e) => {
+		throw e;
+	};
+	function P(e) {
+		return this.fromWireType(D[e >> 2]);
+	}
+	var _e = (e) => {
+		for (; e.length;) {
+			var t = e.pop();
+			e.pop()(t);
+		}
+	}, ve = (e) => un(e), F = {}, I = {}, L = {};
+	class R extends Error {
+		constructor(e) {
+			super(e), this.name = "BindingError";
+		}
+	}
+	var z = (e) => {
+		throw new R(e);
+	}, B = {};
+	function ye(e, t) {
+		let n = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : {};
+		var r = t.name;
+		if (e || z(`type "${r}" must have a positive integer typeid pointer`), L[e]) {
+			if (n.ignoreDuplicateRegistrations) return;
+			z(`Cannot register type '${r}' twice`);
+		}
+		if (L[e] = t, delete B[e], I[e]) {
+			var i = I[e];
+			delete I[e], i.forEach((e) => e());
+		}
+	}
+	function V(e, t) {
+		return ye(e, t, arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : {});
+	}
+	class be extends Error {
+		constructor(e) {
+			super(e), this.name = "InternalError";
+		}
+	}
+	var H = (e) => {
+		throw new be(e);
+	}, U = (e, t, n) => {
+		e.forEach((e) => B[e] = t);
+		function r(t) {
+			var r = n(t);
+			r.length !== e.length && H("Mismatched type converter count");
+			for (var i = 0; i < e.length; ++i) V(e[i], r[i]);
+		}
+		var i = Array(t.length), a = [], o = 0;
+		for (let [e, n] of t.entries()) if (L[n]) i[e] = L[n];
+		else {
+			var s, c, l;
+			a.push(n), ((l = (s = I)[c = n]) == null ? s[c] = [] : l).push(() => {
+				i[e] = L[n], ++o, o === a.length && r(i);
+			});
+		}
+		a.length === 0 && r(i);
+	}, W, xe = (e, t) => W.fill(0, e, e + t), Se = {}, G = (e) => {
+		var t = e, n = e >= 1024 && e < 195448;
+		if (n) {
+			var r = Se[t];
+			if (r != null) return r;
+		}
+		for (var i = "";;) {
+			var a = W[e++];
+			if (!a) break;
+			i += String.fromCharCode(a);
+		}
+		return n && (Se[t] = i), i;
+	}, Ce = !1, we = () => {}, Te = (e) => {
+		e.smartPtr ? e.smartPtrType.rawDestructor(e.smartPtr) : e.ptrType.registeredClass.rawDestructor(e.ptr);
+	}, Ee = (e) => {
+		--e.count.value, e.count.value === 0 && Te(e);
+	}, K = (e) => globalThis.FinalizationRegistry ? (Ce = new FinalizationRegistry((e) => {
+		Ee(e.$$);
+	}), K = (e) => {
+		var t = e.$$;
+		if (t.smartPtr) {
+			var n = { $$: t };
+			Ce.register(e, n, e);
+		}
+		return e;
+	}, we = (e) => Ce.unregister(e), K(e)) : (K = (e) => e, e), De = [], Oe = (e) => ({
+		count: e.count,
+		deleteScheduled: e.deleteScheduled,
+		preservePointerOnDelete: e.preservePointerOnDelete,
+		ptr: e.ptr,
+		ptrType: e.ptrType,
+		smartPtr: e.smartPtr,
+		smartPtrType: e.smartPtrType
+	}), ke = (e) => {
+		z(function(e) {
+			return e.$$.ptrType.registeredClass.name;
+		}(e) + " instance already deleted");
+	};
+	function Ae() {}
+	function je(e, t, n, r, i, a, o, s) {
+		this.name = e, this.constructor = t, this.instancePrototype = n, this.rawDestructor = r, this.baseClass = i, this.getActualType = a, this.upcast = o, this.downcast = s, this.pureVirtualFunctions = [];
+	}
+	var Me = (e) => {
+		if (e === null) return "null";
+		var t = typeof e;
+		return t === "object" || t === "array" || t === "function" ? e.toString() : "" + e;
+	}, Ne = (e, t, n) => {
+		for (; t !== n;) t.upcast || z(`Expected null or instance of ${n.name}, got an instance of ${t.name}`), e = t.upcast(e), t = t.baseClass;
+		return e;
+	};
+	function Pe(e, t) {
+		if (t === null) return this.isReference && z(`null is not a valid ${this.name}`), 0;
+		t.$$ || z(`Cannot pass "${Me(t)}" as a ${this.name}`), t.$$.ptr || z(`Cannot pass deleted object as a pointer of type ${this.name}`);
+		var n = t.$$.ptrType.registeredClass;
+		return Ne(t.$$.ptr, n, this.registeredClass);
+	}
+	var Fe = [], q = [
+		0,
+		1,
+		,
+		1,
+		null,
+		1,
+		!0,
+		1,
+		!1,
+		1
+	], J = {
+		toValue: (e) => (e || z(`Cannot use deleted val. handle = ${e}`), q[e]),
+		toHandle: (e) => {
+			switch (e) {
+				case void 0: return 2;
+				case null: return 4;
+				case !0: return 6;
+				case !1: return 8;
+				default: {
+					let t = Fe.pop() || q.length;
+					return q[t] = e, q[t + 1] = 1, t;
+				}
+			}
+		}
+	};
+	function Ie(e, t) {
+		var n;
+		if (t === null) return this.isReference && z(`null is not a valid ${this.name}`), this.isSmartPointer ? (n = this.rawConstructor(), e !== null && e.push(this.rawDestructor, n), n) : 0;
+		t && t.$$ || z(`Cannot pass "${Me(t)}" as a ${this.name}`), t.$$.ptr || z(`Cannot pass deleted object as a pointer of type ${this.name}`), !this.isConst && t.$$.ptrType.isConst && z(`Cannot convert argument of type ${t.$$.smartPtrType ? t.$$.smartPtrType.name : t.$$.ptrType.name} to parameter type ${this.name}`);
+		var r = t.$$.ptrType.registeredClass;
+		if (n = Ne(t.$$.ptr, r, this.registeredClass), this.isSmartPointer) switch (t.$$.smartPtr === void 0 && z("Passing raw pointer to smart pointer is illegal"), this.sharingPolicy) {
+			case 0:
+				t.$$.smartPtrType === this ? n = t.$$.smartPtr : z(`Cannot convert argument of type ${t.$$.smartPtrType ? t.$$.smartPtrType.name : t.$$.ptrType.name} to parameter type ${this.name}`);
+				break;
+			case 1:
+				n = t.$$.smartPtr;
+				break;
+			case 2:
+				if (t.$$.smartPtrType === this) n = t.$$.smartPtr;
+				else {
+					var i = t.clone();
+					n = this.rawShare(n, J.toHandle(() => i.delete())), e !== null && e.push(this.rawDestructor, n);
+				}
+				break;
+			default: z("Unsupported sharing policy");
+		}
+		return n;
+	}
+	var Le = (e, t, n) => {
+		if (t === n) return e;
+		if (n.baseClass === void 0) return null;
+		var r = Le(e, t, n.baseClass);
+		return r === null ? null : n.downcast(r);
+	}, Re = (e, t) => {
+		for (t === void 0 && z("ptr should not be undefined"); e.baseClass;) t = e.upcast(t), e = e.baseClass;
+		return t;
+	}, ze = /* @__PURE__ */ new Map(), Be = (e, t) => (t = Re(e, t), ze.get(t)), Ve = (e, t) => (t.ptrType && t.ptr || H("makeClassHandle requires ptr and ptrType"), !!t.smartPtrType != !!t.smartPtr && H("Both smartPtrType and smartPtr must be specified"), t.count = { value: 1 }, K(Object.create(e, { $$: {
+		value: t,
+		writable: !0
+	} }))), He = {};
+	function Ue(e) {
+		var t = this.getPointee(e);
+		if (!t) return this.destructor(e), null;
+		var n = Be(this.registeredClass, t);
+		if (n !== void 0) {
+			if (n.$$.count.value === 0) return n.$$.ptr = t, n.$$.smartPtr = e, n.clone();
+			var r = n.clone();
+			return this.destructor(e), r;
+		}
+		function i() {
+			return this.isSmartPointer ? Ve(this.registeredClass.instancePrototype, {
+				ptrType: this.pointeeType,
+				ptr: t,
+				smartPtrType: this,
+				smartPtr: e
+			}) : Ve(this.registeredClass.instancePrototype, {
+				ptrType: this,
+				ptr: e
+			});
+		}
+		var a = He[this.registeredClass.getActualType(t)];
+		if (!a) return i.call(this);
+		var o = this.isConst ? a.constPointerType : a.pointerType, s = Le(t, this.registeredClass, o.registeredClass);
+		return s === null ? i.call(this) : this.isSmartPointer ? Ve(o.registeredClass.instancePrototype, {
+			ptrType: o,
+			ptr: s,
+			smartPtrType: this,
+			smartPtr: e
+		}) : Ve(o.registeredClass.instancePrototype, {
+			ptrType: o,
+			ptr: s
+		});
+	}
+	function We(e, t) {
+		if (t === null) return this.isReference && z(`null is not a valid ${this.name}`), 0;
+		t.$$ || z(`Cannot pass "${Me(t)}" as a ${this.name}`), t.$$.ptr || z(`Cannot pass deleted object as a pointer of type ${this.name}`), t.$$.ptrType.isConst && z(`Cannot convert argument of type ${t.$$.ptrType.name} to parameter type ${this.name}`);
+		var n = t.$$.ptrType.registeredClass;
+		return Ne(t.$$.ptr, n, this.registeredClass);
+	}
+	function Ge(e, t, n, r, i, a, o, s, c, l, u) {
+		this.name = e, this.registeredClass = t, this.isReference = n, this.isConst = r, this.isSmartPointer = i, this.pointeeType = a, this.sharingPolicy = o, this.rawGetPointee = s, this.rawConstructor = c, this.rawShare = l, this.rawDestructor = u, !i && t.baseClass === void 0 ? this.toWireType = r ? Pe : We : (this.toWireType = Ie, i && (this.usesDestructor = !0));
+	}
+	var Ke = (e, t) => Object.defineProperty(t, "name", { value: e }), qe = {}, Je = (e, t, n) => {
+		e = e.replace(/p/g, "i");
+		var r = qe[e];
+		return r(t, ...n);
+	}, Ye = function(e, t) {
+		let n = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : [];
+		return e.includes("j") ? Je(e, t, n) : function(e) {
+			return e;
+		}(E(t)(...n));
+	}, Xe = (e, t) => function() {
+		return Ye(e, t, [...arguments]);
+	}, Y = (e, t) => {
+		e = G(e);
+		var n = function() {
+			return e.includes("j") ? Xe(e, t) : E(t);
+		}();
+		return typeof n != "function" && z(`unknown function pointer with signature ${e}: ${t}`), n;
+	}, Ze = (e, t, n) => {
+		if (e[t].overloadTable === void 0) {
+			var r = e[t];
+			e[t] = function() {
+				var r = [...arguments];
+				return e[t].overloadTable[r.length] || z(`Function '${n}' called with an invalid number of arguments (${r.length}) - expects one of (${e[t].overloadTable})!`), e[t].overloadTable[r.length].apply(this, r);
+			}, e[t].overloadTable = [], e[t].overloadTable[r.argCount] = r;
+		}
+	}, Qe = (e, t) => Object.prototype.hasOwnProperty.call(e, t), $e = (e, t, n) => {
+		Qe(r, e) ? ((n === void 0 || r[e].overloadTable !== void 0 && r[e].overloadTable[n] !== void 0) && z(`Cannot register public name '${e}' twice`), Ze(r, e, e), r[e].overloadTable[n] && z(`Cannot register multiple overloads of a function with the same number of arguments (${n})!`), r[e].overloadTable[n] = t) : (r[e] = t, r[e].argCount = n);
+	}, et = (e) => {
+		e = e.replace(/[^a-zA-Z0-9_]/g, "$");
+		var t = e.charCodeAt(0);
+		return t >= 48 && t <= 57 ? `_${e}` : e;
+	}, tt = (e, t, n) => {
+		Qe(r, e) || H("Replacing nonexistent public symbol"), r[e].overloadTable !== void 0 && n !== void 0 ? r[e].overloadTable[n] = t : (r[e] = t, r[e].argCount = n);
+	};
+	class nt extends Error {}
+	var rt = (e) => {
+		var t = nn(e), n = G(t);
+		return an(t), n;
+	}, it = (e, t) => {
+		var n = [], r = {};
+		throw t.forEach(function e(t) {
+			r[t] || L[t] || (B[t] ? B[t].forEach(e) : (n.push(t), r[t] = !0));
+		}), new nt(`${e}: ` + n.map(rt).join([", "]));
+	};
+	function at(e) {
+		for (var t = 1; t < e.length; ++t) if (e[t] !== null && e[t].argStackAlloc) return !0;
+		return !1;
+	}
+	var ot = {
+		ftfd3: function(e, t, n, r, i, a, o, s, c, l) {
+			return function(e, t, o) {
+				var u = [], d = n(r, s(u, e), c(u, t), l(u, o));
+				return i(u), a(d);
+			};
+		},
+		ftfd4: function(e, t, n, r, i, a, o, s, c, l, u) {
+			return function(e, t, o, d) {
+				var f = [], p = n(r, s(f, e), c(f, t), l(f, o), u(f, d));
+				return i(f), a(p);
+			};
+		},
+		ftfn0: function(e, t, n, r, i, a) {
+			return function() {
+				return a(n(r));
+			};
+		},
+		ftfn3: function(e, t, n, r, i, a, o, s, c, l) {
+			return function(e, t, i) {
+				return a(n(r, s(null, e), c(null, t), l(null, i)));
+			};
+		},
+		ftfn4: function(e, t, n, r, i, a, o, s, c, l, u) {
+			return function(e, t, i, o) {
+				return a(n(r, s(null, e), c(null, t), l(null, i), u(null, o)));
+			};
+		},
+		ftfs3: function(e, t, n, r, i, a, o, s, c, l, u, d) {
+			return function(e, t, i) {
+				var o = s(), f = n(r, l(null, e), u(null, t), d(null, i));
+				return c(o), a(f);
+			};
+		},
+		ftfs4: function(e, t, n, r, i, a, o, s, c, l, u, d, f) {
+			return function(e, t, i, o) {
+				var p = s(), m = n(r, l(null, e), u(null, t), d(null, i), f(null, o));
+				return c(p), a(m);
+			};
+		},
+		tffd1: function(e, t, n, r, i, a, o, s) {
+			return function(e) {
+				var t = [];
+				n(r, o(t, this), s(t, e)), i(t);
+			};
+		},
+		tffd2: function(e, t, n, r, i, a, o, s, c) {
+			return function(e, t) {
+				var a = [];
+				n(r, o(a, this), s(a, e), c(a, t)), i(a);
+			};
+		},
+		tffn1: function(e, t, n, r, i, a, o, s) {
+			return function(e) {
+				n(r, o(null, this), s(null, e));
+			};
+		},
+		tffn2: function(e, t, n, r, i, a, o, s, c) {
+			return function(e, t) {
+				n(r, o(null, this), s(null, e), c(null, t));
+			};
+		},
+		tffs1: function(e, t, n, r, i, a, o, s, c, l) {
+			return function(e) {
+				var t = s();
+				n(r, o(null, this), l(null, e)), c(t);
+			};
+		},
+		tffs2: function(e, t, n, r, i, a, o, s, c, l, u) {
+			return function(e, t) {
+				var i = s();
+				n(r, o(null, this), l(null, e), u(null, t)), c(i);
+			};
+		},
+		ttfd1: function(e, t, n, r, i, a, o, s) {
+			return function(e) {
+				var t = [], c = n(r, o(t, this), s(t, e));
+				return i(t), a(c);
+			};
+		},
+		ttfd2: function(e, t, n, r, i, a, o, s, c) {
+			return function(e, t) {
+				var l = [], u = n(r, o(l, this), s(l, e), c(l, t));
+				return i(l), a(u);
+			};
+		},
+		ttfn0: function(e, t, n, r, i, a, o) {
+			return function() {
+				return a(n(r, o(null, this)));
+			};
+		},
+		ttfn1: function(e, t, n, r, i, a, o, s) {
+			return function(e) {
+				return a(n(r, o(null, this), s(null, e)));
+			};
+		},
+		ttfn2: function(e, t, n, r, i, a, o, s, c) {
+			return function(e, t) {
+				return a(n(r, o(null, this), s(null, e), c(null, t)));
+			};
+		},
+		ttfs1: function(e, t, n, r, i, a, o, s, c, l) {
+			return function(e) {
+				var t = s(), i = n(r, o(null, this), l(null, e));
+				return c(t), a(i);
+			};
+		},
+		ttfs2: function(e, t, n, r, i, a, o, s, c, l, u) {
+			return function(e, t) {
+				var i = s(), d = n(r, o(null, this), l(null, e), u(null, t));
+				return c(i), a(d);
+			};
+		}
+	};
+	function st(e) {
+		for (var t, n = 1; n < e.length; ++n) if ((t = e[n]) != null && t.usesDestructor) return !0;
+		return !1;
+	}
+	function ct(e, t, n, r, i, a) {
+		var o = t.length;
+		o < 2 && z("argTypes array size mismatch! Must at least get return value and receiver (this) types!");
+		var s = t[1] !== null && n !== null, c = st(t), l = at(t), u = l && !a && !c;
+		l && !u && (c = !0);
+		var d = !t[0].isVoid, f = o - 2, p = t[0], m = t[1], h = [
+			e,
+			z,
+			r,
+			i,
+			_e,
+			p.fromWireType.bind(p),
+			m == null ? void 0 : m.toWireType.bind(m)
+		];
+		u && h.push(T, w);
+		for (var g = 2; g < o; ++g) {
+			var _ = t[g];
+			h.push(_.toWireType.bind(_));
+		}
+		var ee = ot[`${s ? "t" : "f"}${d ? "t" : "f"}${a ? "t" : "f"}${u ? "s" : c ? "d" : "n"}${f}`];
+		return Ke(e, ee(...h));
+	}
+	var lt = (e, t) => {
+		for (var n = [], r = 0; r < e; r++) n.push(D[t + r * 4 >> 2]);
+		return n;
+	}, ut = (e) => {
+		e = e.trim();
+		let t = e.indexOf("(");
+		return t === -1 ? e : e.slice(0, t);
+	}, dt = [], ft = (e) => {
+		if (e > 9 && --q[e + 1] === 0) {
+			var t = q[e];
+			q[e] = void 0;
+			var n = dt[e];
+			n && (dt[e] = void 0, n(t)), Fe.push(e);
+		}
+	}, pt = {
+		name: "emscripten::val",
+		fromWireType: (e) => {
+			var t = J.toValue(e);
+			return ft(e), t;
+		},
+		toWireType: (e, t) => J.toHandle(t),
+		readValueFromPointer: P
+	}, mt, ht, gt = (e, t) => {
+		switch (t) {
+			case 4: return function(e) {
+				return this.fromWireType(mt[e >> 2]);
+			};
+			case 8: return function(e) {
+				return this.fromWireType(ht[e >> 3]);
+			};
+			default: throw TypeError(`invalid float width (${t}): ${e}`);
+		}
+	}, _t, vt, X, yt = (e, t, n) => {
+		switch (t) {
+			case 1: return n ? (e) => x[e] : (e) => W[e];
+			case 2: return n ? (e) => _t[e >> 1] : (e) => X[e >> 1];
+			case 4: return n ? (e) => vt[e >> 2] : (e) => D[e >> 2];
+			default: throw TypeError(`invalid integer width (${t}): ${e}`);
+		}
+	}, bt = (e, t, n) => {
+		let r = (e, t) => {
+			let n = 0;
+			return {
+				next() {
+					if (n >= e) return { done: !0 };
+					let r = n;
+					return n++, {
+						value: t(r),
+						done: !1
+					};
+				},
+				[Symbol.iterator]() {
+					return this;
+				}
+			};
+		};
+		e[Symbol.iterator] || (e[Symbol.iterator] = function() {
+			let e = this[t]();
+			return r(e, (e) => this[n](e));
+		});
+	}, xt = Object.assign({ optional: !0 }, pt), St = globalThis.TextDecoder && new TextDecoder(), Ct = (e, t, n, r) => {
+		var i = t + n;
+		if (r) return i;
+		for (; e[t] && !(t >= i);) ++t;
+		return t;
+	}, wt = function(e) {
+		let t = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : 0, n = arguments.length > 2 ? arguments[2] : void 0, r = arguments.length > 3 ? arguments[3] : void 0;
+		var i = Ct(e, t, n, r);
+		if (i - t > 16 && e.buffer && St) return St.decode(e.subarray(t, i));
+		for (var a = ""; t < i;) {
+			var o = e[t++];
+			if (!(o & 128)) a += String.fromCharCode(o);
+			else {
+				var s = e[t++] & 63;
+				if ((o & 224) == 192) a += String.fromCharCode((o & 31) << 6 | s);
+				else {
+					var c = e[t++] & 63;
+					if (o = (o & 240) == 224 ? (o & 15) << 12 | s << 6 | c : (o & 7) << 18 | s << 12 | c << 6 | e[t++] & 63, o < 65536) a += String.fromCharCode(o);
+					else {
+						var l = o - 65536;
+						a += String.fromCharCode(55296 | l >> 10, 56320 | l & 1023);
+					}
+				}
+			}
+		}
+		return a;
+	}, Tt = {}, Et = (e, t, n) => {
+		var r = t == null && e >= 1024 && e < 195448;
+		if (r) {
+			var i = Tt[e];
+			if (i != null) return i;
+		}
+		return i = e ? wt(W, e, t, n) : "", r && (Tt[e] = i), i;
+	}, Dt = (e) => {
+		for (var t = 0, n = 0; n < e.length; ++n) {
+			var r = e.codePointAt(n);
+			r <= 127 ? t++ : r <= 2047 ? t += 2 : r <= 65535 ? t += 3 : (t += 4, n++);
+		}
+		return t;
+	}, Ot = (e, t, n, r) => {
+		if (!(r > 0)) return 0;
+		for (var i = n, a = n + r - 1, o = 0; o < e.length; ++o) {
+			var s = e.codePointAt(o);
+			if (s <= 127) {
+				if (n >= a) break;
+				t[n++] = s;
+			} else if (s <= 2047) {
+				if (n + 1 >= a) break;
+				t[n++] = 192 | s >> 6, t[n++] = 128 | s & 63;
+			} else if (s <= 65535) {
+				if (n + 2 >= a) break;
+				t[n++] = 224 | s >> 12, t[n++] = 128 | s >> 6 & 63, t[n++] = 128 | s & 63;
+			} else {
+				if (n + 3 >= a) break;
+				t[n++] = 240 | s >> 18, t[n++] = 128 | s >> 12 & 63, t[n++] = 128 | s >> 6 & 63, t[n++] = 128 | s & 63, o++;
+			}
+		}
+		return t[n] = 0, n - i;
+	}, kt = (e, t, n) => Ot(e, W, t, n), At = globalThis.TextDecoder ? new TextDecoder("utf-16le") : void 0, jt = (e, t, n) => {
+		var r = e >> 1, i = Ct(X, r, t / 2, n);
+		if (i - r > 16 && At) return At.decode(X.subarray(r, i));
+		for (var a = "", o = r; o < i; ++o) {
+			var s = X[o];
+			a += String.fromCharCode(s);
+		}
+		return a;
+	}, Mt = (e, t, n) => {
+		for (var r = "", i = e >> 2, a = 0; !(a >= t / 4); a++) {
+			var o = D[i + a];
+			if (!o && !n) break;
+			r += String.fromCodePoint(o);
+		}
+		return r;
+	}, Nt = (e) => e.length * 2, Pt = (e) => {
+		for (var t = 0, n = 0; n < e.length; ++n) e.codePointAt(n) > 65535 && n++, t += 4;
+		return t;
+	}, Ft = function(e, t) {
+		let n = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : 2147483647;
+		if (n < 2) return 0;
+		n -= 2;
+		for (var r = t, i = n < e.length * 2 ? n / 2 : e.length, a = 0; a < i; ++a) {
+			var o = e.charCodeAt(a);
+			_t[t >> 1] = o, t += 2;
+		}
+		return _t[t >> 1] = 0, t - r;
+	}, It = function(e, t) {
+		let n = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : 2147483647;
+		if (n < 4) return 0;
+		for (var r = t, i = r + n - 4, a = 0; a < e.length; ++a) {
+			var o = e.codePointAt(a);
+			if (o > 65535 && a++, vt[t >> 2] = o, t += 4, t + 4 > i) break;
+		}
+		return vt[t >> 2] = 0, t - r;
+	}, Lt = 0, Rt = [], zt = (e) => {
+		var t = Rt.length;
+		return Rt.push(e), t;
+	}, Bt = (e, t, n) => {
+		var r = [], i = e(r, n);
+		return r.length && (D[t >> 2] = J.toHandle(r)), i;
+	}, Vt = {
+		"2t1": (e, t) => (n, r, i, a) => Bt(e, i, new (J.toValue(n))(t(a))),
+		"3t1": (e, t) => (n, r, i, a) => Bt(e, i, t(a))
+	}, Ht = (e, t) => {
+		var n = L[e];
+		return n === void 0 && z(`${t} has unknown type ${rt(e)}`), n;
+	}, Ut = (e, t) => {
+		for (var n = Array(e), r = 0; r < e; ++r) n[r] = Ht(D[t + r * 4 >> 2], `parameter ${r}`);
+		return n;
+	}, Wt = {}, Gt = (e) => {
+		var t = Wt[e];
+		return t === void 0 ? G(e) : t;
+	}, Kt = (e) => {
+		if (e instanceof de || e == "unwind") return h;
+		o(0, e);
+	}, qt = () => C || Lt > 0, Jt = (e) => {
+		if (h = e, !qt()) {
+			var t;
+			(t = r.onExit) == null || t.call(r, e), m = !0;
+		}
+		o(0, new de(e));
+	}, Yt = () => {
+		if (!qt()) try {
+			tn(h);
+		} catch (e) {
+			Kt(e);
+		}
+	}, Xt = function(e) {
+		var t = [...arguments].slice(1);
+		if (!m) try {
+			return e(...t);
+		} catch (e) {
+			Kt(e);
+		} finally {
+			Yt();
+		}
+	}, Z = /* @__PURE__ */ new Map(), Zt = () => performance.now(), Qt = (e, t) => Math.ceil(e / t) * t, $t = () => 2147483648, en = (e) => {
+		var t = (e - gn.buffer.byteLength + 65535) / 65536 | 0;
+		try {
+			return gn.grow(t), te(), 1;
+		} catch {}
+	}, tn = (e) => {
+		h = e, Jt(e);
+	};
+	(() => {
+		let e = Ae.prototype;
+		Object.assign(e, {
+			isAliasOf(e) {
+				if (!(this instanceof Ae) || !(e instanceof Ae)) return !1;
+				var t = this.$$.ptrType.registeredClass, n = this.$$.ptr;
+				e.$$ = e.$$;
+				for (var r = e.$$.ptrType.registeredClass, i = e.$$.ptr; t.baseClass;) n = t.upcast(n), t = t.baseClass;
+				for (; r.baseClass;) i = r.upcast(i), r = r.baseClass;
+				return t === r && n === i;
+			},
+			clone() {
+				if (this.$$.ptr || ke(this), this.$$.preservePointerOnDelete) return this.$$.count.value += 1, this;
+				var e = K(Object.create(Object.getPrototypeOf(this), { $$: { value: Oe(this.$$) } }));
+				return e.$$.count.value += 1, e.$$.deleteScheduled = !1, e;
+			},
+			delete() {
+				this.$$.ptr || ke(this), this.$$.deleteScheduled && !this.$$.preservePointerOnDelete && z("Object already scheduled for deletion"), we(this), Ee(this.$$), this.$$.preservePointerOnDelete || (this.$$.smartPtr = void 0, this.$$.ptr = void 0);
+			},
+			isDeleted() {
+				return !this.$$.ptr;
+			},
+			deleteLater() {
+				return this.$$.ptr || ke(this), this.$$.deleteScheduled && !this.$$.preservePointerOnDelete && z("Object already scheduled for deletion"), De.push(this), De.length, this.$$.deleteScheduled = !0, this;
+			}
+		});
+		let t = Symbol.dispose;
+		t && (e[t] = e.delete);
+	})(), Object.assign(Ge.prototype, {
+		getPointee(e) {
+			return this.rawGetPointee && (e = this.rawGetPointee(e)), e;
+		},
+		destructor(e) {
+			var t, n;
+			(t = (n = this).rawDestructor) == null || t.call(n, e);
+		},
+		readValueFromPointer: P,
+		fromWireType: Ue
+	}), r.noExitRuntime && (C = r.noExitRuntime), r.print && r.print, r.printErr && (f = r.printErr), r.wasmBinary && (p = r.wasmBinary), r.arguments && r.arguments, r.thisProgram && r.thisProgram;
+	var Q = r.preInit;
+	if (Q) for (typeof Q == "function" && (r.preInit = Q = [Q]); Q.length > 0;) Q.shift()();
+	var nn, rn, an, on, sn, $, cn, ln, un, dn, fn, pn, mn, hn, gn, _n;
+	function vn(e) {
+		nn = e.sa, rn = r._malloc = e.ta, an = r._free = e.ua, on = e.va, sn = e.xa, $ = e.ya, cn = e.za, ln = e.Aa, un = e.Ba, dn = e.Ca, fn = e.Da, pn = e.Ea, mn = e.Fa, hn = qe.iiij = e.Ga, gn = e.qa, _n = e.wa;
+	}
+	var yn = {
+		ca: (e, t) => E(e)(t),
+		s: (e) => {
+			var t = new O(e);
+			return t.get_caught() || (t.set_caught(!0), A--), t.set_rethrown(!1), k.push(t), on(e);
+		},
+		J: () => {
+			$(0, 0);
+			var e = k.pop();
+			pn(e.excPtr), j = null;
+		},
+		a: () => N([]),
+		j: (e) => N([e]),
+		m: (e, t) => N([e, t]),
+		ha: () => {
+			k.length || y("no exception to throw");
+			var e = k[k.length - 1], t = e.excPtr;
+			e.set_rethrown(!0), e.set_caught(!1), A++, fn(t), t = j = new _(t), he(t);
+		},
+		r: (e, t, n) => {
+			new O(e).init(t, n), fn(e), e = j = new _(e), A++, he(e);
+		},
+		e: (e) => {
+			e = j == null ? j = new _(e) : j, ge(e);
+		},
+		ga: () => y(""),
+		V: (e) => {
+			var t = F[e];
+			delete F[e];
+			var n = t.rawConstructor, r = t.rawDestructor, i = t.valueSize, a = t.isTrivial, o = t.fields, s = o.map((e) => e.getterReturnTypeID).concat(o.map((e) => e.setterArgumentTypeID));
+			U([e], s, (e) => {
+				var s = {};
+				for (var [c, l] of o.entries()) {
+					let t = e[c], n = l.getter, r = l.getterContext, i = e[c + o.length], a = l.setter, d = l.setterContext;
+					var u = !i.usesDestructor && !i.argStackAlloc ? (e, t) => a(d, e, i.toWireType(null, t)) : (e, t) => {
+						var n = [];
+						a(d, e, i.toWireType(n, t)), _e(n);
+					};
+					s[l.fieldName] = {
+						read: (e) => t.fromWireType(n(r, e)),
+						write: u,
+						optional: t.optional
+					};
+				}
+				return [{
+					name: t.name,
+					fromWireType: (e) => {
+						var t = {};
+						for (var n in s) t[n] = s[n].read(e);
+						return r(e), t;
+					},
+					toWireType: (e, t) => {
+						for (var o in s) if (!(o in t) && !s[o].optional) throw TypeError(`Missing field: "${o}"`);
+						var c;
+						for (o in a && !e ? (c = ve(i), xe(c, i)) : (c = n(), e && e.push(r, c)), s) s[o].write(c, t[o]);
+						return c;
+					},
+					readValueFromPointer: P,
+					usesDestructor: !a,
+					argStackAlloc: a
+				}];
+			});
+		},
+		Y: () => {},
+		ka: (e, t, n, r) => {
+			t = G(t), V(e, {
+				name: t,
+				fromWireType: function(e) {
+					return !!e;
+				},
+				toWireType: function(e, t) {
+					return t ? n : r;
+				},
+				readValueFromPointer: function(e) {
+					return this.fromWireType(W[e]);
+				}
+			});
+		},
+		pa: (e, t, n, r, i, a, o, s, c, l, u, d, f) => {
+			u = G(u), a = Y(i, a), s && (s = Y(o, s)), l && (l = Y(c, l)), f = Y(d, f);
+			var p = et(u);
+			$e(p, function() {
+				it(`Cannot construct ${u} due to unbound types`, [r]);
+			}), U([
+				e,
+				t,
+				n
+			], r ? [r] : [], (t) => {
+				t = t[0];
+				var n, i;
+				r ? (n = t.registeredClass, i = n.instancePrototype) : i = Ae.prototype;
+				var o = Ke(u, function() {
+					var e = [...arguments];
+					if (Object.getPrototypeOf(this) !== c) throw new R(`Use 'new' to construct ${u}`);
+					if (d.constructor_body === void 0) throw new R(`${u} has no accessible constructor`);
+					var t = d.constructor_body[e.length];
+					if (t === void 0) throw new R(`Tried to invoke ctor of ${u} with invalid number of parameters (${e.length}) - expected (${Object.keys(d.constructor_body).toString()}) parameters instead!`);
+					return t.apply(this, e);
+				}), c = Object.create(i, { constructor: { value: o } });
+				o.prototype = c;
+				var d = new je(u, o, c, f, n, a, s, l);
+				if (d.baseClass) {
+					var m;
+					(m = d.baseClass).__derivedClasses != null || (m.__derivedClasses = []), d.baseClass.__derivedClasses.push(d);
+				}
+				var h = new Ge(u, d, !0, !1, !1), g = new Ge(u + "*", d, !1, !1, !1), _ = new Ge(u + " const*", d, !1, !0, !1);
+				return He[e] = {
+					pointerType: g,
+					constPointerType: _
+				}, tt(p, o), [
+					h,
+					g,
+					_
+				];
+			});
+		},
+		oa: (e, t, n, r, i, a) => {
+			var o = lt(t, n);
+			i = Y(r, i), U([], [e], (e) => {
+				e = e[0];
+				var n = `constructor ${e.name}`;
+				if (e.registeredClass.constructor_body === void 0 && (e.registeredClass.constructor_body = []), e.registeredClass.constructor_body[t - 1] !== void 0) throw new R(`Cannot register multiple constructors with identical number of parameters (${t - 1}) for class '${e.name}'! Overload resolution is currently only performed using the parameter count, not actual type info!`);
+				return e.registeredClass.constructor_body[t - 1] = () => {
+					it(`Cannot construct ${e.name} due to unbound types`, o);
+				}, U([], o, (r) => (r.splice(1, 0, null), e.registeredClass.constructor_body[t - 1] = ct(n, r, null, i, a), [])), [];
+			});
+		},
+		E: (e, t, n, r, i, a, o, s, c) => {
+			var l = lt(n, r);
+			t = G(t), t = ut(t), a = Y(i, a), U([], [e], (e) => {
+				e = e[0];
+				var r = `${e.name}.${t}`;
+				t.startsWith("@@") && (t = Symbol[t.substring(2)]), s && e.registeredClass.pureVirtualFunctions.push(t);
+				function i() {
+					it(`Cannot call ${r} due to unbound types`, l);
+				}
+				var u = e.registeredClass.instancePrototype, d = u[t];
+				return d === void 0 || d.overloadTable === void 0 && d.className !== e.name && d.argCount === n - 2 ? (i.argCount = n - 2, i.className = e.name, u[t] = i) : (Ze(u, t, r), u[t].overloadTable[n - 2] = i), U([], l, (i) => {
+					var s = ct(r, i, e, a, o, c);
+					return u[t].overloadTable === void 0 ? (s.argCount = n - 2, u[t] = s) : u[t].overloadTable[n - 2] = s, [];
+				}), [];
+			});
+		},
+		ia: (e) => V(e, pt),
+		Q: (e, t, n) => {
+			t = G(t), V(e, {
+				name: t,
+				fromWireType: (e) => e,
+				toWireType: (e, t) => t,
+				readValueFromPointer: gt(t, n)
+			});
+		},
+		R: (e, t, n, r, i, a, o) => {
+			var s = lt(t, n);
+			e = G(e), e = ut(e), i = Y(r, i), $e(e, function() {
+				it(`Cannot call ${e} due to unbound types`, s);
+			}, t - 1), U([], s, (n) => {
+				var r = [n[0], null].concat(n.slice(1));
+				return tt(e, ct(e, r, null, i, a, o), t - 1), [];
+			});
+		},
+		z: (e, t, n, r, i) => {
+			t = G(t);
+			let a = r === 0, o = (e) => e;
+			if (a) {
+				var s = 32 - 8 * n;
+				o = (e) => e << s >>> s, i = o(i);
+			}
+			V(e, {
+				name: t,
+				fromWireType: o,
+				toWireType: (e, t) => t,
+				readValueFromPointer: yt(t, n, r !== 0)
+			});
+		},
+		ma: (e, t, n, r) => {
+			n = G(n), r = G(r), U([], [e, t], (e) => {
+				let t = e[0];
+				return bt(t.registeredClass.instancePrototype, n, r), [];
+			});
+		},
+		u: (e, t, n) => {
+			var r = [
+				Int8Array,
+				Uint8Array,
+				Int16Array,
+				Uint16Array,
+				Int32Array,
+				Uint32Array,
+				Float32Array,
+				Float64Array,
+				Uint8ClampedArray
+			][t];
+			function i(e) {
+				var t = D[e >> 2], n = D[e + 4 >> 2];
+				return new r(x.buffer, n, t);
+			}
+			n = G(n), V(e, {
+				name: n,
+				fromWireType: i,
+				readValueFromPointer: i
+			}, { ignoreDuplicateRegistrations: !0 });
+		},
+		U: (e) => {
+			V(e, xt);
+		},
+		ja: (e, t) => {
+			t = G(t), V(e, {
+				name: t,
+				fromWireType(e) {
+					var t = D[e >> 2], n = Et(e + 4, t, !0);
+					return an(e), n;
+				},
+				toWireType(e, t) {
+					t instanceof ArrayBuffer && (t = new Uint8Array(t));
+					var n, r = typeof t == "string";
+					r || ArrayBuffer.isView(t) && t.BYTES_PER_ELEMENT == 1 || z("Cannot pass non-string to std::string"), n = r ? Dt(t) : t.length;
+					var i = rn(4 + n + 1), a = i + 4;
+					return D[i >> 2] = n, r ? kt(t, a, n + 1) : W.set(t, a), i;
+				},
+				readValueFromPointer: P
+			});
+		},
+		M: (e, t, n) => {
+			n = G(n);
+			var r, i, a;
+			t === 2 ? (r = jt, i = Ft, a = Nt) : (r = Mt, i = It, a = Pt), V(e, {
+				name: n,
+				fromWireType: (e) => {
+					var n = D[e >> 2], i = r(e + 4, n * t, !0);
+					return an(e), i;
+				},
+				toWireType: (e, r) => {
+					typeof r != "string" && z(`Cannot pass non-string to C++ string type ${n}`);
+					var o = a(r), s = rn(4 + o + t);
+					return D[s >> 2] = o / t, i(r, s + 4, o + t), s;
+				},
+				readValueFromPointer: P
+			});
+		},
+		C: (e, t, n, r, i, a, o, s) => {
+			F[e] = {
+				name: G(t),
+				rawConstructor: Y(n, r),
+				rawDestructor: Y(i, a),
+				valueSize: o,
+				isTrivial: !!s,
+				fields: []
+			};
+		},
+		W: (e, t, n, r, i, a, o, s, c, l) => {
+			F[e].fields.push({
+				fieldName: G(t),
+				getterReturnTypeID: n,
+				getter: Y(r, i),
+				getterContext: a,
+				setterArgumentTypeID: o,
+				setter: Y(s, c),
+				setterContext: l
+			});
+		},
+		la: (e, t) => {
+			t = G(t), V(e, {
+				isVoid: !0,
+				name: t,
+				fromWireType: () => {},
+				toWireType: () => {}
+			});
+		},
+		fa: () => {
+			C = !1, Lt = 0;
+		},
+		T: (e, t, n) => {
+			var [r, ...i] = Ut(e, t), a = i.map((e) => e.readValueFromPointer.bind(e));
+			e--;
+			var o = Vt[`${n}${r.isVoid ? "f" : "t"}${e}`], s = o(...r.isVoid ? a : [r.toWireType.bind(r), ...a]);
+			return zt(Ke(`methodCaller<(${i.map((e) => e.name)}) => ${r.name}>`, s));
+		},
+		da: ft,
+		B: (e) => e ? (e = Gt(e), J.toHandle(globalThis[e])) : J.toHandle(globalThis),
+		L: (e) => {
+			e > 9 && (q[e + 1] += 1);
+		},
+		S: (e, t, n, r, i) => Rt[e](t, n, r, i),
+		na: (e) => {
+			_e(J.toValue(e)), ft(e);
+		},
+		aa: (e, t) => {
+			if (Z.has(e) && (clearTimeout(Z.get(e)), Z.delete(e)), !t) return 0;
+			var n = setTimeout(() => {
+				Z.delete(e), Xt(sn, e, Zt());
+			}, t);
+			return Z.set(e, n), 0;
+		},
+		ba: (e) => {
+			var t = W.length;
+			e >>>= 0;
+			var n = $t();
+			if (e > n) return !1;
+			for (var r = 1; r <= 4; r *= 2) {
+				var i = t * (1 + .2 / r);
+				if (i = Math.min(i, e + 100663296), en(Math.min(n, Qt(Math.max(e, i), 65536)))) return !0;
+			}
+			return !1;
+		},
+		$: function(e, t, n) {
+			var r = T();
+			try {
+				return E(e)(t, n);
+			} catch (e) {
+				if (w(r), !(e instanceof g)) throw e;
+				$(1, 0);
+			}
+		},
+		O: function(e, t, n, r) {
+			var i = T();
+			try {
+				return E(e)(t, n, r);
+			} catch (e) {
+				if (w(i), !(e instanceof g)) throw e;
+				$(1, 0);
+			}
+		},
+		I: function(e, t, n, r, i, a) {
+			var o = T();
+			try {
+				return E(e)(t, n, r, i, a);
+			} catch (e) {
+				if (w(o), !(e instanceof g)) throw e;
+				$(1, 0);
+			}
+		},
+		b: function(e, t) {
+			var n = T();
+			try {
+				return E(e)(t);
+			} catch (e) {
+				if (w(n), !(e instanceof g)) throw e;
+				$(1, 0);
+			}
+		},
+		A: function(e, t, n, r) {
+			var i = T();
+			try {
+				return E(e)(t, n, r);
+			} catch (e) {
+				if (w(i), !(e instanceof g)) throw e;
+				$(1, 0);
+			}
+		},
+		h: function(e, t, n) {
+			var r = T();
+			try {
+				return E(e)(t, n);
+			} catch (e) {
+				if (w(r), !(e instanceof g)) throw e;
+				$(1, 0);
+			}
+		},
+		D: function(e, t, n, r, i) {
+			var a = T();
+			try {
+				return E(e)(t, n, r, i);
+			} catch (e) {
+				if (w(a), !(e instanceof g)) throw e;
+				$(1, 0);
+			}
+		},
+		g: function(e, t, n, r) {
+			var i = T();
+			try {
+				return E(e)(t, n, r);
+			} catch (e) {
+				if (w(i), !(e instanceof g)) throw e;
+				$(1, 0);
+			}
+		},
+		l: function(e, t, n, r, i) {
+			var a = T();
+			try {
+				return E(e)(t, n, r, i);
+			} catch (e) {
+				if (w(a), !(e instanceof g)) throw e;
+				$(1, 0);
+			}
+		},
+		n: function(e, t, n, r, i, a) {
+			var o = T();
+			try {
+				return E(e)(t, n, r, i, a);
+			} catch (e) {
+				if (w(o), !(e instanceof g)) throw e;
+				$(1, 0);
+			}
+		},
+		K: function(e, t, n, r, i, a, o) {
+			var s = T();
+			try {
+				return E(e)(t, n, r, i, a, o);
+			} catch (e) {
+				if (w(s), !(e instanceof g)) throw e;
+				$(1, 0);
+			}
+		},
+		P: function(e, t, n, r, i, a, o) {
+			var s = T();
+			try {
+				return E(e)(t, n, r, i, a, o);
+			} catch (e) {
+				if (w(s), !(e instanceof g)) throw e;
+				$(1, 0);
+			}
+		},
+		x: function(e, t, n, r, i, a, o, s) {
+			var c = T();
+			try {
+				return E(e)(t, n, r, i, a, o, s);
+			} catch (e) {
+				if (w(c), !(e instanceof g)) throw e;
+				$(1, 0);
+			}
+		},
+		H: function(e, t, n, r, i, a, o, s, c) {
+			var l = T();
+			try {
+				return E(e)(t, n, r, i, a, o, s, c);
+			} catch (e) {
+				if (w(l), !(e instanceof g)) throw e;
+				$(1, 0);
+			}
+		},
+		X: function(e, t, n, r, i) {
+			var a = T();
+			try {
+				return hn(e, t, n, r, i);
+			} catch (e) {
+				if (w(a), !(e instanceof g)) throw e;
+				$(1, 0);
+			}
+		},
+		c: function(e) {
+			var t = T();
+			try {
+				E(e)();
+			} catch (e) {
+				if (w(t), !(e instanceof g)) throw e;
+				$(1, 0);
+			}
+		},
+		i: function(e, t) {
+			var n = T();
+			try {
+				E(e)(t);
+			} catch (e) {
+				if (w(n), !(e instanceof g)) throw e;
+				$(1, 0);
+			}
+		},
+		Z: function(e, t, n) {
+			var r = T();
+			try {
+				E(e)(t, n);
+			} catch (e) {
+				if (w(r), !(e instanceof g)) throw e;
+				$(1, 0);
+			}
+		},
+		d: function(e, t, n) {
+			var r = T();
+			try {
+				E(e)(t, n);
+			} catch (e) {
+				if (w(r), !(e instanceof g)) throw e;
+				$(1, 0);
+			}
+		},
+		N: function(e, t, n, r, i, a, o, s, c) {
+			var l = T();
+			try {
+				E(e)(t, n, r, i, a, o, s, c);
+			} catch (e) {
+				if (w(l), !(e instanceof g)) throw e;
+				$(1, 0);
+			}
+		},
+		G: function(e, t, n, r, i) {
+			var a = T();
+			try {
+				E(e)(t, n, r, i);
+			} catch (e) {
+				if (w(a), !(e instanceof g)) throw e;
+				$(1, 0);
+			}
+		},
+		f: function(e, t, n, r) {
+			var i = T();
+			try {
+				E(e)(t, n, r);
+			} catch (e) {
+				if (w(i), !(e instanceof g)) throw e;
+				$(1, 0);
+			}
+		},
+		F: function(e, t, n, r, i, a, o) {
+			var s = T();
+			try {
+				E(e)(t, n, r, i, a, o);
+			} catch (e) {
+				if (w(s), !(e instanceof g)) throw e;
+				$(1, 0);
+			}
+		},
+		k: function(e, t, n, r, i) {
+			var a = T();
+			try {
+				E(e)(t, n, r, i);
+			} catch (e) {
+				if (w(a), !(e instanceof g)) throw e;
+				$(1, 0);
+			}
+		},
+		_: function(e, t, n, r, i, a, o, s) {
+			var c = T();
+			try {
+				E(e)(t, n, r, i, a, o, s);
+			} catch (e) {
+				if (w(c), !(e instanceof g)) throw e;
+				$(1, 0);
+			}
+		},
+		o: function(e, t, n, r, i, a) {
+			var o = T();
+			try {
+				E(e)(t, n, r, i, a);
+			} catch (e) {
+				if (w(o), !(e instanceof g)) throw e;
+				$(1, 0);
+			}
+		},
+		t: function(e, t, n, r, i, a, o) {
+			var s = T();
+			try {
+				E(e)(t, n, r, i, a, o);
+			} catch (e) {
+				if (w(s), !(e instanceof g)) throw e;
+				$(1, 0);
+			}
+		},
+		y: function(e, t, n, r, i, a, o, s) {
+			var c = T();
+			try {
+				E(e)(t, n, r, i, a, o, s);
+			} catch (e) {
+				if (w(c), !(e instanceof g)) throw e;
+				$(1, 0);
+			}
+		},
+		q: function(e, t, n, r, i, a, o, s, c) {
+			var l = T();
+			try {
+				E(e)(t, n, r, i, a, o, s, c);
+			} catch (e) {
+				if (w(l), !(e instanceof g)) throw e;
+				$(1, 0);
+			}
+		},
+		v: function(e, t, n, r, i, a, o, s, c, l) {
+			var u = T();
+			try {
+				E(e)(t, n, r, i, a, o, s, c, l);
+			} catch (e) {
+				if (w(u), !(e instanceof g)) throw e;
+				$(1, 0);
+			}
+		},
+		p: function(e, t, n, r, i, a, o, s, c, l, u) {
+			var d = T();
+			try {
+				E(e)(t, n, r, i, a, o, s, c, l, u);
+			} catch (e) {
+				if (w(d), !(e instanceof g)) throw e;
+				$(1, 0);
+			}
+		},
+		w: (e) => e,
+		ea: Jt
+	}, bn = await async function() {
+		function e(e) {
+			return bn = e.exports, vn(bn), te(), bn;
+		}
+		var t = ue(), n = r.instantiateWasm;
+		return n ? new Promise((r) => {
+			n(t, (t) => r(e(t)));
+		}) : (b != null || (b = ie()), function(t) {
+			return e(t.instance);
+		}(await le(p, b, t)));
+	}();
+	return await async function() {
+		var e;
+		ne();
+		var t = r.setStatus;
+		t && (t("Running..."), await new Promise((e) => setTimeout(e, 1)), setTimeout(t, 1, "")), m || (re(), (e = r.onRuntimeInitialized) == null || e.call(r), v());
+	}(), r;
+}
+function ce(e) {
+	return b(se, e);
+}
+function le() {
+	return ie(se);
+}
+function ue(e) {
+	ce({
+		overrides: e,
+		equalityFn: Object.is,
+		fireImmediately: !1
+	});
+}
+async function de(e, t) {
+	return ae(se, e, t);
+}
+var x = "8451d7fe72f3d8e9ced56c7b6805e8bab88a0c218bfcd25c47c0a999e8188f3d", fe = [
+	["aztec", "Aztec"],
+	["aztec_code", "AztecCode"],
+	["aztec_rune", "AztecRune"],
+	["code_128", "Code128"],
+	["code_39", "Code39"],
+	["code_39_standard", "Code39Std"],
+	["code_39_extended", "Code39Ext"],
+	["code_32", "Code32"],
+	["pzn", "PZN"],
+	["code_93", "Code93"],
+	["codabar", "Codabar"],
+	["databar", "DataBar"],
+	["databar_omni", "DataBarOmni"],
+	["databar_stacked", "DataBarStk"],
+	["databar_stacked_omni", "DataBarStkOmni"],
+	["databar_expanded", "DataBarExp"],
+	["databar_expanded_stacked", "DataBarExpStk"],
+	["databar_limited", "DataBarLtd"],
+	["data_matrix", "DataMatrix"],
+	["dx_film_edge", "DXFilmEdge"],
+	["ean_13", "EAN13"],
+	["ean_upc", "EANUPC"],
+	["isbn", "ISBN"],
+	["ean_8", "EAN8"],
+	["itf", "ITF"],
+	["itf_14", "ITF14"],
+	["maxi_code", "MaxiCode"],
+	["micro_qr_code", "MicroQRCode"],
+	["pdf417", "PDF417"],
+	["compact_pdf417", "CompactPDF417"],
+	["micro_pdf417", "MicroPDF417"],
+	["qr_code", "QRCode"],
+	["qr_code_model_1", "QRCodeModel1"],
+	["qr_code_model_2", "QRCodeModel2"],
+	["rm_qr_code", "RMQRCode"],
+	["upc_a", "UPCA"],
+	["upc_e", "UPCE"],
+	["telepen", "Telepen"],
+	["telepen_alpha", "TelepenAlpha"],
+	["telepen_numeric", "TelepenNumeric"],
+	["other_barcode", "OtherBarcode"],
+	["linear_codes", "AllLinear"],
+	["matrix_codes", "AllMatrix"],
+	["gs1_codes", "AllGS1"],
+	["retail_codes", "AllRetail"],
+	["industrial_codes", "AllIndustrial"],
+	["any", "All"]
+], pe = [...fe, ["unknown"]].map((e) => e[0]), S = new Map(fe);
+function C(e) {
+	for (let [t, n] of S) if (e === n) return t;
+	return "unknown";
+}
+function w(e) {
+	if (T(e)) return {
+		width: e.naturalWidth,
+		height: e.naturalHeight
+	};
+	if (me(e)) return {
+		width: e.width.baseVal.value,
+		height: e.height.baseVal.value
+	};
+	if (E(e)) return {
+		width: e.videoWidth,
+		height: e.videoHeight
+	};
+	if (O(e)) return {
+		width: e.width,
+		height: e.height
+	};
+	if (A(e)) return {
+		width: e.displayWidth,
+		height: e.displayHeight
+	};
+	if (D(e) || k(e)) return {
+		width: e.width,
+		height: e.height
+	};
+	throw TypeError("The provided value is not of type '(Blob or HTMLCanvasElement or HTMLImageElement or HTMLVideoElement or ImageBitmap or ImageData or OffscreenCanvas or SVGImageElement or VideoFrame)'.");
+}
+function T(e) {
+	try {
+		var t;
+		return e instanceof (e == null || (t = e.ownerDocument) == null || (t = t.defaultView) == null ? void 0 : t.HTMLImageElement);
+	} catch {
+		return !1;
+	}
+}
+function me(e) {
+	try {
+		var t;
+		return e instanceof (e == null || (t = e.ownerDocument) == null || (t = t.defaultView) == null ? void 0 : t.SVGImageElement);
+	} catch {
+		return !1;
+	}
+}
+function E(e) {
+	try {
+		var t;
+		return e instanceof (e == null || (t = e.ownerDocument) == null || (t = t.defaultView) == null ? void 0 : t.HTMLVideoElement);
+	} catch {
+		return !1;
+	}
+}
+function D(e) {
+	try {
+		var t;
+		return e instanceof (e == null || (t = e.ownerDocument) == null || (t = t.defaultView) == null ? void 0 : t.HTMLCanvasElement);
+	} catch {
+		return !1;
+	}
+}
+function O(e) {
+	try {
+		return e instanceof ImageBitmap || Object.prototype.toString.call(e) === "[object ImageBitmap]";
+	} catch {
+		return !1;
+	}
+}
+function k(e) {
+	try {
+		return e instanceof OffscreenCanvas || Object.prototype.toString.call(e) === "[object OffscreenCanvas]";
+	} catch {
+		return !1;
+	}
+}
+function A(e) {
+	try {
+		return e instanceof VideoFrame || Object.prototype.toString.call(e) === "[object VideoFrame]";
+	} catch {
+		return !1;
+	}
+}
+function j(e) {
+	try {
+		return e instanceof Blob || Object.prototype.toString.call(e) === "[object Blob]";
+	} catch {
+		return !1;
+	}
+}
+function M(e) {
+	try {
+		return e instanceof ImageData || Object.prototype.toString.call(e) === "[object ImageData]";
+	} catch {
+		return !1;
+	}
+}
+function N(e, t) {
+	try {
+		let n = new OffscreenCanvas(e, t);
+		if (n.getContext("2d") instanceof OffscreenCanvasRenderingContext2D) return n;
+		throw void 0;
+	} catch {
+		let n = document.createElement("canvas");
+		return n.width = e, n.height = t, n;
+	}
+}
+async function he(e) {
+	if (T(e) && !await ve(e)) throw new DOMException("Failed to load or decode HTMLImageElement.", "InvalidStateError");
+	if (me(e) && !await F(e)) throw new DOMException("Failed to load or decode SVGImageElement.", "InvalidStateError");
+	if (A(e) && I(e)) throw new DOMException("VideoFrame is closed.", "InvalidStateError");
+	if (E(e) && (e.readyState === 0 || e.readyState === 1)) throw new DOMException("Invalid element or state.", "InvalidStateError");
+	if (O(e) && R(e)) throw new DOMException("The image source is detached.", "InvalidStateError");
+	let { width: t, height: n } = w(e);
+	if (t === 0 || n === 0) return null;
+	let r = N(t, n).getContext("2d");
+	r.drawImage(e, 0, 0);
+	try {
+		return r.getImageData(0, 0, t, n);
+	} catch {
+		throw new DOMException("Source would taint origin.", "SecurityError");
+	}
+}
+async function ge(e) {
+	let t;
+	try {
+		t = await createImageBitmap(e);
+	} catch {
+		try {
+			if (globalThis.Image) {
+				t = new Image();
+				let n = "";
+				try {
+					n = URL.createObjectURL(e), t.src = n, await t.decode();
+				} finally {
+					URL.revokeObjectURL(n);
+				}
+			} else return e;
+		} catch {
+			throw new DOMException("Failed to load or decode Blob.", "InvalidStateError");
+		}
+	}
+	try {
+		return await he(t);
+	} finally {
+		O(t) && t.close();
+	}
+}
+function P(e) {
+	let { width: t, height: n } = e;
+	if (t === 0 || n === 0) return null;
+	let r = e.getContext("2d");
+	try {
+		return r.getImageData(0, 0, t, n);
+	} catch {
+		throw new DOMException("Source would taint origin.", "SecurityError");
+	}
+}
+async function _e(e) {
+	if (j(e)) return await ge(e);
+	if (M(e)) {
+		if (L(e)) throw new DOMException("The image data has been detached.", "InvalidStateError");
+		return e;
+	}
+	return D(e) || k(e) ? P(e) : await he(e);
+}
+async function ve(e) {
+	try {
+		return await e.decode(), !0;
+	} catch {
+		return !1;
+	}
+}
+async function F(e) {
+	try {
+		var t;
+		return await ((t = e.decode) == null ? void 0 : t.call(e)), !0;
+	} catch {
+		return !1;
+	}
+}
+function I(e) {
+	return e.format === null;
+}
+function L(e) {
+	return e.data.buffer.byteLength === 0;
+}
+function R(e) {
+	return e.width === 0 && e.height === 0;
+}
+function z(e, t) {
+	return B(e) ? new DOMException(`${t}: ${e.message}`, e.name) : ye(e) ? new e.constructor(`${t}: ${e.message}`) : /* @__PURE__ */ Error(`${t}: ${e}`);
+}
+function B(e) {
+	return e instanceof DOMException || Object.prototype.toString.call(e) === "[object DOMException]";
+}
+function ye(e) {
+	return e instanceof Error || Object.prototype.toString.call(e) === "[object Error]";
+}
+// \0@oxc-project+runtime@0.156.0/helpers/esm/checkPrivateRedeclaration.js
+function V(e, t) {
+	if (t.has(e)) throw TypeError("Cannot initialize the same private elements twice on an object");
+}
+// \0@oxc-project+runtime@0.156.0/helpers/esm/classPrivateFieldInitSpec.js
+function be(e, t, n) {
+	V(e, t), t.set(e, n);
+}
+// \0@oxc-project+runtime@0.156.0/helpers/esm/assertClassBrand.js
+function H(e, t, n) {
+	if (typeof e == "function" ? e === t : e.has(t)) return arguments.length < 3 ? t : n;
+	throw TypeError("Private element is not present on this object");
+}
+// \0@oxc-project+runtime@0.156.0/helpers/esm/classPrivateFieldSet2.js
+function U(e, t, n) {
+	return e.set(H(e, t), n), n;
+}
+// \0@oxc-project+runtime@0.156.0/helpers/esm/classPrivateFieldGet2.js
+function W(e, t) {
+	return e.get(H(e, t));
+}
+// src/core.ts
+var xe = /* @__PURE__ */ new WeakMap(), Se = class {
+	constructor(e = {}) {
+		be(this, xe, void 0);
+		try {
+			var t;
+			let n = e == null || (t = e.formats) == null ? void 0 : t.filter((e) => e !== "unknown");
+			if ((n == null ? void 0 : n.length) === 0) throw TypeError("Hint option provided, but is empty.");
+			for (let e of n == null ? [] : n) if (!S.has(e)) throw TypeError(`Failed to read the 'formats' property from 'BarcodeDetectorOptions': The provided value '${e}' is not a valid enum value of type BarcodeFormat.`);
+			U(xe, this, n == null ? [] : n), ce({ fireImmediately: !0 }).catch(() => {});
+		} catch (e) {
+			throw z(e, "Failed to construct 'BarcodeDetector'");
+		}
+	}
+	static async getSupportedFormats() {
+		return pe.filter((e) => e !== "unknown");
+	}
+	async detect(e) {
+		try {
+			let t = await _e(e);
+			if (t === null) return [];
+			let n, r = {
+				textMode: "Plain",
+				formats: W(xe, this).map((e) => S.get(e))
+			};
+			try {
+				n = await de(t, r);
+			} catch (e) {
+				throw console.error(e), new DOMException("Barcode detection service unavailable.", "NotSupportedError");
+			}
+			return n.map((e) => {
+				let { topLeft: { x: t, y: n }, topRight: { x: r, y: i }, bottomLeft: { x: a, y: o }, bottomRight: { x: s, y: c } } = e.position, l = Math.min(t, r, a, s), u = Math.min(n, i, o, c), d = Math.max(t, r, a, s), f = Math.max(n, i, o, c);
+				return {
+					boundingBox: new DOMRectReadOnly(l, u, d - l, f - u),
+					rawValue: e.text,
+					format: C(e.format),
+					cornerPoints: [
+						{
+							x: t,
+							y: n
+						},
+						{
+							x: r,
+							y: i
+						},
+						{
+							x: s,
+							y: c
+						},
+						{
+							x: a,
+							y: o
+						}
+					]
+				};
+			});
+		} catch (e) {
+			throw z(e, "Failed to execute 'detect' on 'BarcodeDetector'");
+		}
+	}
+};
+export { ue as a, ce as i, le as n, te as o, x as r, ne as s, Se as t };

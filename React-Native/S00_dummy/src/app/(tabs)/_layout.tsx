@@ -8,7 +8,7 @@ export default function TabsLayout() {
      <Tabs.Screen name={"profile"} options={{title:"Profile",headerShown:false,tabBarIcon:()=><Feather name="user" size={27}  />}}/>
       <Tabs.Screen name={"products"} options={{title:"Products",headerShown:false,tabBarIcon:()=><AntDesign name="product" size={27} color="black"  />}}/>
        <Tabs.Screen name="cart" options={{title:"Cart",headerShown:false,tabBarIcon:()=><AntDesign name="shopping" size={27} color="black"  />}}/>
-        <Tabs.Screen name="redux" options={{title:"Redux",headerShown:false,tabBarIcon:()=><AntDesign name="key" size={27} color="black"  />}}/>
+        <Tabs.Screen name="Camera2" options={{title:"Camera",headerShown:false,tabBarIcon:()=><AntDesign name="camera" size={27} color="black"  />}}/>
        
       
   </Tabs>
